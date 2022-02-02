@@ -1,0 +1,68 @@
+<mat-card style="margin-top: 80px; margin-bottom: 100px;">
+  <mat-card-content>
+    <div class="header">
+      <P>Sign Into Your Account </P>
+    </div>
+    <form (ngSubmit)="signUp()" name="signupForm1" [formGroup]=" signupForm">
+
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Name</mat-label>
+          <input formControlName="name" matInput placeholder="Enter Name" required />
+          <mat-error *ngIf="!signupForm.controls['name'].valid">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput placeholder="Enter email address" required />
+          <mat-error *ngIf="!signupForm.controls['email'].valid">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Mobile Number</mat-label>
+          <input formControlName="mobile" matInput placeholder="Enter Mobile Number" required />
+          <mat-error *ngIf="!signupForm.controls['name'].valid">
+            Mobile Number is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+          </button>
+          <mat-error *ngIf="!signupForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        <span>
+          <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+        </span>
+      </div>
+
+      <button mat-flat-button color="primary" [disabled]="!signupForm.valid">Register</button>
+    </form>
+
+    <a [routerLink]="['/login']"> Log in</a>
+    <!--       
+      <div class="button-row">
+        <p>log in </p>
+      </div> -->
+
+  </mat-card-content>
+</mat-card>

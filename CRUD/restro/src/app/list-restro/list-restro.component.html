@@ -1,0 +1,35 @@
+<!-- <ul> -->
+<!-- <li *ngFor="let item of collection">
+        {{item.name}}
+    </li> -->
+<!-- <li *ngFor="let user of collection">
+        {{user.name}}
+      </li>
+</ul> -->
+<!--  -->
+
+<table [ngClass]="['col-lg-12']">
+
+  <tr style="background-color: #ba68c8; color: white;">
+    <th scope="col">Policy No</th>
+    <th scope="col">Policy Holders Name</th>
+    <th scope="col">Policy Amount</th>
+    <th scope="col">Amount for EMI</th>
+    <th scope="col">Nominees name</th>
+    <th scope="col">operations </th>
+  </tr>
+
+  <!-- <tbody> -->
+  <tr *ngFor="let item of collection">
+    <th scope="row">{{item.id}}</th>
+    <td>{{item.name}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.nomineeName}}</td>
+    <td>
+      <a (click)="deleteResto(item.id)"><i class="fa fa-trash" [ngClass]="['btn1']"></i></a>
+      <a routerLink="/update/{{item.id}}"><i class="fa fa-edit" [ngClass]="['btn2']"></i></a></td>
+  </tr>
+
+  <!-- </tbody> -->
+</table>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+
+        <!-- routerLinkActive="active" ... background color red -->
+        <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active"  routerLink="/about">About </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/userlogin']" [queryParams]="{uid:strUIDForQueryParams, pwd:strPWDForQueryParams}">
+            User Login
+        </a>
+    </li>
+    </ul>
+    <br>
+    <a href="" (click)="logInForAuthGuard()">LogIn</a>
+    <a href="" (click)="logOutForAuthGuard()">LogOut</a>
+
+  </div>
+
+</nav>
+<router-outlet></router-outlet>

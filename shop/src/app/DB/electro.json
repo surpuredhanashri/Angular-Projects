@@ -1,0 +1,216 @@
+{
+  "Product": [
+    {
+      "id": 101,
+      "ProductName": "Alexa",
+      "Quantity": "3",
+      "Amount": "12000"
+    },
+    {
+      "id": 102,
+      "ProductName": "Laptop",
+      "Quantity": "1",
+      "Amount": "80000"
+    },
+    {
+      "id": 103,
+      "ProductName": "AC",
+      "Quantity": "2",
+      "Amount": "90000"
+    }
+  ],
+
+  "signup": [
+    {
+      "name": "DS",
+      "email": "ds@gmail.com",
+      "password": "shri",
+      "mobile": 12345,
+      "id": 2
+    },
+    {
+      "name": "dhanashri",
+      "email": "dhanashri@gmail.com",
+      "password": "asdfgh",
+      "mobile": "1234567890",
+      "id": 8
+    },
+    {
+      "name": "kumar",
+      "email": "kumar@gmail.com",
+      "password": "asdfgh",
+      "mobile": "1234567890",
+      "id": 9
+    }
+  ],
+
+  "elecronics": [
+    {
+      "id": 1,
+      "Title": "Acer Laptop",
+      "Desciption": "best Laptop ever",
+      "Image": "assets/laptop1.jpeg",
+      "Image2": "assets/laptop2.jpeg"
+    },
+    {
+      "id": 2,
+      "Title": "Headphones",
+      "Desciption": "best Headphones ever",
+      "Image": "assets/Headphones.jpeg",
+      "Image2": "assets/Headphones1.jpeg"
+    },
+    {
+      "id": 3,
+      "Title": "mobile",
+      "Desciption": "best mobile ever",
+      "Image": "assets/mobile1.jpeg",
+      "Image2": "assets/mobile2.jpeg"
+    },
+    {
+      "id": 4,
+      "Title": "TV",
+      "Desciption": "best tv ever",
+      "Image": "assets/TV.jpeg",
+      "Image2": "assets/TV1.jpeg"
+    },
+    {
+      "id": 5,
+      "Title": "AC",
+      "Desciption": "best AC ever",
+      "Image": "assets/AC.jpeg",
+      "Image2": "assets/AC1.jpeg"
+    },
+    {
+      "id": 6,
+      "Title": "Iron",
+      "Desciption": "best Iron ever",
+      "Image": "assets/Iron.jpeg",
+      "Image2": "assets/Iron1.jpeg"
+    },
+    {
+      "id": 7,
+      "Title": "Cooktop",
+      "Desciption": "best Cooktop ever",
+      "Image": "assets/Cooktop.jpeg",
+      "Image2": "assets/Cooktop1.jpeg"
+    },
+    {
+      "id": 8,
+      "Title": "Refrigerator",
+      "Desciption": "best Refrigerator ever",
+      "Image": "assets/Refrigerator.jpeg",
+      "Image2": "assets/Refrigerator1.png"
+    }
+  ],
+
+  "ALLProduct": [
+    {
+      "id": 1,
+      "Title": "TV",
+      "Desciption": "52inch samsung hd tv",
+      "Price": 200,
+      "Image": "assets/mobile1.jpeg",
+      "category": "Mobile"
+    },
+    {
+      "id": 2,
+      "Title": "Mobile",
+      "Desciption": "All New iphone ,feel the technology",
+      "Price": 300,
+      "Image": "assets/laptop1.jpeg",
+      "category": "Laptop"
+    },
+    {
+      "id": 3,
+      "Title": "AC",
+      "Desciption": "Hithachi AC, 5 star",
+      "Price": 400,
+      "Image": "assets/AC.jpeg",
+      "category": "AC"
+    },
+    {
+      "id": 4,
+      "Title": "TV",
+      "Desciption": "Sony Bravia,56inch",
+      "Price": 500,
+      "Image": "assets/TV.jpeg",
+      "category": "TV"
+    },
+    {
+      "id": 5,
+      "Title": "Mobile",
+      "Desciption": "Iphone 12 Max Pro",
+      "Price": 600,
+      "Image": "assets/mobile1.jpeg",
+      "category": "Mobile"
+    },
+    {
+      "id": 6,
+      "Title": "AC",
+      "Desciption": "DAIKIN AC 4.5 star rating",
+      "Price": 550,
+      "Image": "assets/AC.jpeg",
+      "category": "AC"
+    },
+    {
+      "id": 7,
+      "Title": "Laptop",
+      "Desciption": "Macbook pro 13,m1 inch",
+      "Price": 550,
+      "Image": "assets/laptop1.jpeg",
+      "category": "Laptop"
+    }
+  ],
+
+  "AC": [
+    {
+      "id": 1,
+      "Title": "AC",
+      "Desciption": "best AC ever",
+      "Price": 200,
+      "Image": "assets/AC!.jpeg"
+    },
+    {
+      "id": 2,
+      "Title": "Mobile",
+      "Desciption": "best tv ever",
+      "Price": 200,
+      "Image": "assets/headphone.jpeg"
+    },
+    {
+      "id": 3,
+      "Title": "AC",
+      "Desciption": "best tv ever",
+      "Price": 200,
+      "Image": "assets/mob.jpeg"
+    }
+  ],
+
+  "Mobile": [
+    {
+      "id": 1,
+      "Title": "TV",
+      "Desciption": "best tv ever",
+      "Price": 200,
+      "Image": "assets/mob3.jpeg"
+    },
+    {
+      "id": 2,
+      "Title": "Mobile",
+      "Desciption": "best tv ever",
+      "Price": 200,
+      "Image": "assets/mob.jpeg"
+    },
+    {
+      "id": 3,
+      "Title": "AC",
+      "Desciption": "best tv ever",
+      "Price": 200,
+      "Image": "assets/mob5.jpeg"
+    }
+  ],
+
+  "Cart": [
+    
+  ]
+}

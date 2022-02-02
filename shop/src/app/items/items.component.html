@@ -1,0 +1,70 @@
+<div class="filter">
+  <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true"
+    aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+
+<div class="container-fluid">
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2">
+
+          <div class="border-bottom pb-2 ml-2">
+            <h4 id="burgundy">Filters</h4>
+          </div>
+          <div class="py-2 border-bottom ml-3">
+            <h6 class="font-weight-bold">Categories</h6>
+            <div id="orange"><span class="fa fa-minus"></span></div>
+            <form>
+              <form>
+                <div class="form-group"> <input type="checkbox" (change)="istrTV=!istrTV;Checking()" [checked]="istrTV">
+                  <label>Television</label> </div>
+                <div class="form-group"> <input type="checkbox" (change)="istrMobile=!istrMobile;Checking()"
+                    [checked]="istrMobile"> <label>Mobile Phones</label> </div>
+                <div class="form-group"> <input type="checkbox" (change)="istrAc=!istrAc;Checking()" [checked]="istrAc">
+                  <label>Air Conditioner</label> </div>
+                <div class="form-group"> <input type="checkbox" (change)="istrlap=!istrlap;Checking()"
+                    [checked]="istrlap">
+                  <label>Laptop</label> </div>
+              </form>
+            </form>
+          </div>
+
+          <div class="py-2 ml-3">
+            <h6 class="font-weight-bold">Top Offers</h6>
+            <div id="orange"><span class="fa fa-minus"></span></div>
+            <form>
+              <div class="form-group" (click)="PriceLowtoHigh()"> <input type="checkbox"><label>Price: Low to
+                  High</label>
+              </div>
+              <div class="form-group" (click)="PriceHighToLow()"> <input type="checkbox"><label>Price: High to
+                  Low</label>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="col-lg-10">
+          <div class="row">
+              <div *ngFor="let item of arrTV" class=" card col-lg-3  mt-5 mb-3" style="margin-left: 70px;">
+                <img class='img-thumbnail' src="{{item.Image}}" style="width: 450px; height: 200px; object-fit: contain;" />
+                <div class="card-body text-center mx-auto">
+                  <div class='cvp'>
+                    <h5 class="card-title font-weight-bold">{{item.Title}}</h5>
+                    <p class="card-text">{{item.Price | currency}}</p> <a href="#" class="btn details px-auto">view
+                      details</a>
+                    <br />
+                    <a class="btn cart px-auto" (click)="addtocart(item)"> CART <i class="fa fa-shopping-basket"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>

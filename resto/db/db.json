@@ -1,0 +1,36 @@
+{
+  "restaurants": [
+    {
+      "name": "Demo122",
+      "email": "Demo",
+      "address": "Demo",
+      "id": 1
+    },
+    {
+      "name": "Dhanashri",
+      "email": "Dhanashri",
+      "address": "Dhanashri",
+      "id": 3
+    },
+    {
+      "name": "ds",
+      "email": "ds@gmail.com",
+      "address": "ds123",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "dafa",
+      "email": "",
+      "password": "f",
+      "id": 1
+    },
+    {
+      "name": "user1",
+      "email": "rm",
+      "password": "12345",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!-- <body>
+
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="User name" required="">
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <button>Sign up</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <button>Login</button>
+
+        <div style="text-align: center; margin-top: 30px ;" >
+          <a href="https://www.facebook.com/" type="button" class="btn btn-floating mx-1 social-login__icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" type="button" class="btn btn-floating mx-1 social-login__icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/login" type="button" class="btn btn-floating mx-1 social-login__icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</body> -->
+
+
+<mat-card style="margin-top: 80px; margin-bottom: 100px;">
+  <mat-card-content>
+    <div class="header">
+      <P>Sign Into Your Account </P>
+    </div>
+    <form (ngSubmit)="login()" name="loginForm1" [formGroup]=" loginForm">
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput placeholder="Enter email address" required />
+          <mat-error *ngIf="!loginForm.controls['email'].valid">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+
+          <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+          </button>
+
+          <mat-error *ngIf="!loginForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <button mat-flat-button color="primary" (click)="LoginForAuthGuard()">Login</button>
+
+      <span>
+        <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+      </span>
+    </form>
+
+
+    <div>
+      <a [routerLink]="['/signup']"> Register</a>
+
+    </div>
+    <br>
+    <!-- <div routerLink="signup" class="button-row">
+      <p>Create New Account</p>
+    </div> -->
+    <a href="https://www.facebook.com/" type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com/" type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/login" type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </mat-card-content>
+</mat-card>

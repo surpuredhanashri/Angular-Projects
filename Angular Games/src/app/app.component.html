@@ -1,0 +1,14 @@
+<div class="card-container">
+  <a (click)="acitveGame = 'snake'" class="card" [ngClass]="{'acitveGame' : acitveGame == 'snake'}">
+    <span>Snake Game</span>
+  </a>
+  <a (click)="acitveGame = 'car'" class="card" [ngClass]="{'acitveGame' : acitveGame == 'car'}">
+    <span>Car Racing Game</span>
+  </a>
+</div>
+
+<app-snake *ngIf="acitveGame == 'snake'"></app-snake>
+<app-car-racing *ngIf="acitveGame == 'car'"></app-car-racing>
+
+<router-outlet>
+</router-outlet>

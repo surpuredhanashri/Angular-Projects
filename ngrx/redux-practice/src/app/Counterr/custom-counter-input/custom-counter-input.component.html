@@ -1,0 +1,6 @@
+<input type="text" placeholder="Enter Counter Value" [(ngModel)]="value" />
+
+<button (click)="onAdd()">Submit</button>
+
+<h3>{{ name$ | async }}</h3>
+<button (click)="changeName()">Change name</button>

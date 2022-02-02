@@ -1,0 +1,40 @@
+<!-- <p>Edit Resturant</p> -->
+<!-- (ngSubmit)="collectResto()" -->
+<!-- <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success</strong> You data has been updated successfully 
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>  -->
+
+<div class="container">
+  <form [formGroup]="editRestro" (ngSubmit)="collection()" [ngClass]="['offset-lg-2 col-lg-8', 'mainCard']">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Policy Holders Name</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Enter Policy Holders Name">
+
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Policy Amount</label>
+      <input type="text" class="form-control" formControlName="email" placeholder="Enter Policy Amount">
+
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Amount for EMI</label>
+      <input type="text" class="form-control" formControlName="address" placeholder="Enter Amount for EMI">
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1"> Nominees name</label>
+      <input type="text" class="form-control" formControlName="nomineeName" placeholder="Enter  Nominees name">
+
+    </div>
+
+    <div style="text-align: end;">
+      <button type="submit" [ngClass]="['btn1']">Update</button>
+
+    </div>
+  </form>
+</div>

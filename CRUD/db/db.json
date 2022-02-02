@@ -1,0 +1,32 @@
+{
+  "restaurants": [
+    {
+      "name": "Charan",
+      "email": "Charan@gmail",
+      "address": "9",
+      "nomineeName": "Dhanaashri",
+      "id": 1
+    },
+    {
+      "name": "Dhanashri",
+      "email": "Dhanashri",
+      "address": "23",
+      "nomineeName": "A",
+      "id": 3
+    },
+    {
+      "name": "Surbhi",
+      "email": "Surbhi@gmail.com",
+      "address": "6",
+      "id": 5,
+      "nomineeName": "Kalpana"
+    },
+    {
+      "name": "",
+      "email": "",
+      "address": "",
+      "nomineeName": "",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<table class="table table-hover mt-4">
+    <thead class="thead=dark">
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let productobj of arrProducts">
+            <td>{{productobj.productId}}</td>
+            <td>{{productobj.name}}</td>
+            <td>{{productobj.amount}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<input type="number" [(ngModel)]="idForProductRouting">
+
+<button type="button" (click)="routeBasedOnID()"> Route to NewURL with thisa data</button>
+<button type="button" (click)="displayAll()"> Display All</button>
